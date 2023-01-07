@@ -12,6 +12,7 @@ int main() {
 
     int pilihan = 0;
     char subpilihan;
+    infotype prefix;
     pilihan = selectMenu();
 
     // Looping menu sederhana
@@ -32,6 +33,11 @@ int main() {
             cout << "\n";
             showData(S);
             break;
+        case 4:
+            // 4. Mengubah notasi prefix menjadi postfix
+            cout << "\n";
+            cout << "Masukkan ekspresi bernotasi prefix yang valid : "; cin >> prefix;
+            cout << "Hasil konversi postfix : " << preToPost(prefix) << "\n";
         }
 
         // Penentuan apakah kembali ke menu atau tidak

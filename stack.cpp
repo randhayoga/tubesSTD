@@ -67,6 +67,7 @@ int selectMenu() {
     cout << "1. Insert data\n";
     cout << "2. Delete data\n";
     cout << "3. Show data\n";
+    cout << "4. Konversi notasi prefix ke postfix\n";
     cout << "0. Exit\n";
     cout << "Masukkan menu : ";
 

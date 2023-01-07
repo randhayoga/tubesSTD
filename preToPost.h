@@ -3,7 +3,7 @@
 
 #include "stack.h"
 
-// Primtif preToPost
+// Subprogram preToPost
 bool isOperator(char x);
 infotype preToPost(infotype prefix);
 

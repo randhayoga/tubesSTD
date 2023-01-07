@@ -25,7 +25,7 @@ void push(Stack &S, infotype x);
 infotype pop(Stack &S);
 void showData(Stack S);
 
-// Subprogram untuk menu sederhana
+// Subprogram terkait stack untuk menu sederhana
 int selectMenu();
 void subMenuInsertData(Stack &S);
 void subMenuDeleteData(Stack &S);
