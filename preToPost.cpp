@@ -23,19 +23,19 @@ infotype preToPost(string prefix) {
      * ekspresi prefix yang valid
      */
     infotype operand1, operand2;
-    stack s;
-    createStack(s);
+    Stack S;
+    createStack(S);
 
     // Iterasi tiap karakter pada ekspresi prefix dari kanan ke kiri
     for (int i = prefix.length()-1; i >= 0; i--) {
         if (isOperator(prefix[i])) {
-            operand1 = pop(s);
-            operand2 = pop(s);
-            push(s, operand1+operand2+prefix[i]);
+            operand1 = pop(S);
+            operand2 = pop(S);
+            push(S, operand1+operand2+prefix[i]);
         } else {
-            push(s, string(1, prefix[i]));
+            push(S, string(1, prefix[i]));
         }
     }
 
-    return pop(s);
+    return pop(S);
 }
