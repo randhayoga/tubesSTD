@@ -2,8 +2,6 @@
 #include "preToPost.h"
 #include "validBrackets.h"
 
-using namespace std;
-
 int main() {
     cout << "HALO, SELAMAT DATANG DI DEMO TUBES KELOMPOK 5!\n\n";
 
@@ -17,26 +15,24 @@ int main() {
 
     // Looping menu sederhana
     while (pilihan != 0) {
+        cout << "\n";
         switch(pilihan) {
         case 1:
             // 1. Insert data
-            cout << "\n";
             subMenuInsertData(S);
             break;
         case 2:
             // 2. Delete data
-            cout << "\n";
             subMenuDeleteData(S);
             break;
         case 3:
             // 3. Show data
-            cout << "\n";
             showData(S);
             break;
         case 4:
             // 4. Mengubah notasi prefix menjadi postfix
-            cout << "\n";
-            cout << "Masukkan ekspresi bernotasi prefix yang valid : "; cin >> prefix;
+            cout << "Masukkan ekspresi bernotasi prefix yang valid : ";
+            cin >> prefix;
             cout << "Hasil konversi postfix : " << preToPost(prefix) << "\n";
         }
 

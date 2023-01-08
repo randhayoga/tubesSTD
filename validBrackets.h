@@ -3,6 +3,7 @@
 
 #include "stack.h"
 
+// Subprogram validBrackets
 bool isValidBrackets(infotype exp);
 
 #endif // VALIDBRAKCETS_H_INCLUDED

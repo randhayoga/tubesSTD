@@ -64,9 +64,9 @@ int selectMenu() {
      * program utama
      */
     cout << "======MENU======\n";
-    cout << "1. Insert data\n";
-    cout << "2. Delete data\n";
-    cout << "3. Show data\n";
+    cout << "1. Insert data ke Stack\n";
+    cout << "2. Delete data pada Stack\n";
+    cout << "3. Show data pada Stack\n";
     cout << "4. Konversi notasi prefix ke postfix\n";
     cout << "0. Exit\n";
     cout << "Masukkan menu : ";
