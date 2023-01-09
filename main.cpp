@@ -10,7 +10,7 @@ int main() {
 
     int pilihan = 0;
     char subpilihan;
-    infotype prefix;
+    infotype prefix, exp;
     pilihan = selectMenu();
 
     // Looping menu sederhana
@@ -34,6 +34,14 @@ int main() {
             cout << "Masukkan ekspresi bernotasi prefix yang valid : ";
             cin >> prefix;
             cout << "Hasil konversi postfix : " << preToPost(prefix) << "\n";
+        case 5:
+            cout << "Masukkan ekspresi yang ingin dicek : ";
+            cin >> exp;
+            if (isValidBrackets(exp)) {
+                cout << "Ekspresi di atas memiliki kurung yang valid\n";
+            } else {
+                cout << "Ekspresi di atas memiliki kurung yang tidak valid\n";
+            }
         }
 
         // Penentuan apakah kembali ke menu atau tidak
@@ -46,7 +54,7 @@ int main() {
         pilihan = selectMenu();
     }
 
-    cout << "\nANDA TELAH KELUAR DARI PROGRAM,";
+    cout << "\nANDA TELAH KELUAR DARI PROGRAM";
     cout << "\nTERIMA KASIH!";
 
     return 0;

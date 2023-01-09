@@ -18,7 +18,7 @@ bool isOperator(char x) {
 
 }
 
-infotype preToPost(string prefix) {
+infotype preToPost(infotype prefix) {
     /* Mengembalikan ekspresi postfix yang merupakan hasil konversi dari sebuah
      * ekspresi prefix yang valid
      */
