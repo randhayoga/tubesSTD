@@ -5,9 +5,6 @@
 
 using namespace std;
 
-#define top(S) (S).top
-#define info(S) (S).info
-
 // ADT Stack
 typedef string infotype;
 const int IDXMAX = 25;
