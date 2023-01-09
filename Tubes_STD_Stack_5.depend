@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1673148588 source:c:\users\admin\desktop\tubes std\tubes_std_stack_5\main.cpp
+1673151334 source:c:\users\admin\desktop\tubes std\tubes_std_stack_5\main.cpp
 	"stack.h"
 	"preToPost.h"
 	"validBrackets.h"
 
-1673109341 c:\users\admin\desktop\tubes std\tubes_std_stack_5\stack.h
+1673241060 c:\users\admin\desktop\tubes std\tubes_std_stack_5\stack.h
 	<iostream>
 
-1673109676 source:c:\users\admin\desktop\tubes std\tubes_std_stack_5\stack.cpp
+1673148666 source:c:\users\admin\desktop\tubes std\tubes_std_stack_5\stack.cpp
 	"stack.h"
 
 1673109582 source:c:\users\admin\desktop\tubes std\tubes_std_stack_5\validbrackets.cpp
@@ -16,7 +16,7 @@
 1673109546 c:\users\admin\desktop\tubes std\tubes_std_stack_5\pretopost.h
 	"stack.h"
 
-1673109578 c:\users\admin\desktop\tubes std\tubes_std_stack_5\validbrackets.h
+1673148755 c:\users\admin\desktop\tubes std\tubes_std_stack_5\validbrackets.h
 	"stack.h"
 
 1672895528 source:c:\users\admin\desktop\tubes std\tubes_std_stack_5\pretopost.cpp

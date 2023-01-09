@@ -10,10 +10,10 @@ using namespace std;
 
 // ADT Stack
 typedef string infotype;
-const int nMax = 25;
+const int IDXMAX = 25;
 
 struct Stack {
-    infotype info[nMax];
+    infotype info[IDXMAX];
     int top;
 };
 

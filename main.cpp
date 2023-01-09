@@ -46,6 +46,8 @@ int main() {
         pilihan = selectMenu();
     }
 
-    cout << "\nANDA TELAH KELUAR DARI PROGRAM";
+    cout << "\nANDA TELAH KELUAR DARI PROGRAM,";
     cout << "\nTERIMA KASIH!";
+
+    return 0;
 }

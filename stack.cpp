@@ -3,19 +3,19 @@
 // Primitif stack
 void createStack(Stack &S) {
     /* I.S. -
-     * F.S. Terbentuk stack kosong dengan top = 0
+     * F.S. Terbentuk stack kosong dengan top = -1
      */
-    top(S) = 0;
+    top(S) = -1;
 }
 
 bool isEmpty(Stack S) {
     /* Mengembalikan nilai true jika stack kosong */
-    return (top(S) == 0);
+    return (top(S) == -1);
 }
 
 bool isFull(Stack S) {
     /* Mengembalikan nilai true jika stack penuh */
-    return (top(S) == nMax);
+    return (top(S) == IDXMAX-1);
 }
 
 void push(Stack &S, infotype x) {
@@ -23,7 +23,9 @@ void push(Stack &S, infotype x) {
      * F.S. Jika stack tidak penuh, maka elemen x ditambahkan pada stack
      *      dan nilai top menjadi top + 1
      */
-    if (!isFull(S)) {
+    if (isFull(S)) {
+        cout << "Stack penuh\n";
+    } else {
         top(S)++;
         info(S)[top(S)] = x;
     }
@@ -33,14 +35,17 @@ infotype pop(Stack &S) {
     /* Jika stack tidak kosong, maka fungsi akan mengembalikan nilai infotype
      * yang ada pada indeks top dan nilai top menjadi top - 1
      */
-    if (!isEmpty(S)) {
-        infotype x = info(S)[top(S)];
+    infotype x;
+    if (isEmpty(S)) {
+        // Jika stack kosong, yang di-return adalah empty string
+        x = {};
+        cout << "Stack kosong\n";
+    } else {
+        x = info(S)[top(S)];
         top(S)--;
-        return x;
     }
 
-    // Jika stack kosong, yang di-return adalah empty string
-    return {};
+    return x;
 }
 
 void showData(Stack S) {
@@ -48,13 +53,14 @@ void showData(Stack S) {
      * F.S. Jika stack tidak kosong, maka menampilkan semua info yang ada pada
      *      stack
      */
-    if (!isEmpty(S)) {
-        for (int i = top(S); i > 0; i--) {
-        cout << info(S)[i] << "\n";
-        }
+    if (isEmpty(S)) {
+        cout << "Stack kosong";
     } else {
-        cout << "Stack kosong\n";
+        for (int i = top(S); i > -1; i--) {
+            cout << info(S)[i] << " ";
+        }
     }
+    cout << "\n";
 }
 
 
@@ -101,7 +107,7 @@ void subMenuDeleteData(Stack &S) {
     cout << "*atau ketik -1 jika ingin menghapus seluruh data pada stack\n";
     cout << "Jumlah data pada Stack yang ingin Anda hapus : "; cin >> N;
     if (N == -1) {
-        N = top(S);
+        N = top(S)+1;
     }
     for (int i = 1; i <= N; i++) {
         dataPop = pop(S);
