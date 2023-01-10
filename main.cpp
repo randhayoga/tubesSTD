@@ -34,6 +34,7 @@ int main() {
             cout << "Masukkan ekspresi bernotasi prefix yang valid : ";
             cin >> prefix;
             cout << "Hasil konversi postfix : " << preToPost(prefix) << "\n";
+            break;
         case 5:
             cout << "Masukkan ekspresi yang ingin dicek : ";
             cin >> exp;
@@ -42,6 +43,7 @@ int main() {
             } else {
                 cout << "Ekspresi di atas memiliki kurung yang tidak valid\n";
             }
+            break;
         }
 
         // Penentuan apakah kembali ke menu atau tidak
