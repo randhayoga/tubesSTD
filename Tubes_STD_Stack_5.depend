@@ -22,7 +22,7 @@
 1673274175 source:c:\users\admin\desktop\tubes std\tubes_std_stack_5\pretopost.cpp
 	"preToPost.h"
 
-1673278207 source:c:\users\admin\desktop\tubesstd\tubes_std_stack_5\main.cpp
+1673321247 source:c:\users\admin\desktop\tubesstd\tubes_std_stack_5\main.cpp
 	"stack.h"
 	"preToPost.h"
 	"validBrackets.h"
@@ -42,6 +42,6 @@
 1673261366 source:c:\users\admin\desktop\tubesstd\tubes_std_stack_5\stack.cpp
 	"stack.h"
 
-1673275513 source:c:\users\admin\desktop\tubesstd\tubes_std_stack_5\validbrackets.cpp
+1673623613 source:c:\users\admin\desktop\tubesstd\tubes_std_stack_5\validbrackets.cpp
 	"stack.h"
 

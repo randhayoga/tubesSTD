@@ -1,6 +1,9 @@
 #include "stack.h"
 
 bool isValidBrackets(infotype exp) {
+    /* Mengembalikan nilai true jika ekspresi exp memiliki tanda kurung yang
+     * valid. False jika sebaliknya.
+     */
     infotype openingBracket;
     Stack S;
     createStack(S);
