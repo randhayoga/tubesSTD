@@ -1,5 +1,5 @@
 # tubesSTD
-[Link Slide](https://github.com/neovim/neovim)
+[Link Slide](https://drive.google.com/drive/folders/1Rs7SCXcnhxdnBAysnl774z_TqODgmglv)
 
 Program yang dibuat untuk memenuhi tugas besar mata kuliah Struktur Data terkait *Stack*
 
