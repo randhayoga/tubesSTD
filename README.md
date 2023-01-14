@@ -1,5 +1,5 @@
 # tubesSTD
-[Link Slide](https://drive.google.com/drive/folders/1Rs7SCXcnhxdnBAysnl774z_TqODgmglv)
+[Link Slide](bit.ly/SlideSTD)
 
 Program yang dibuat untuk memenuhi tugas besar mata kuliah Struktur Data terkait *Stack*
 
